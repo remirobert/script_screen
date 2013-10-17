@@ -1,0 +1,33 @@
+#!/bin/bash
+
+if [ $# != 1 ] || [ $1 == "-h" ] || [ $1 == "--help" ]
+then
+    echo "Usage: screen [OPTION]..."
+    echo "-o --on                  put on the screen"
+    echo "-f --of                  put off the screen"
+    echo "-h --help                display this help and exit"
+    exit 1
+fi
+
+if [ $1 != "-o" ] && [ $1 != "--on" ] &&
+    [ $1 != "-f" ] && [ $1 != "--off" ]
+then
+    echo "${1} command not found. Display the help : -h or --help"
+    exit 1
+fi
+
+if [ $1 == "-o" ] || [ $1 == "--on" ]
+then
+    echo "Put on the screen ..."
+    xset dpms force on
+fi
+
+if [ $1 == "-f" ] || [ $1 == "--off" ]
+then
+    echo "Put off the screen ..."
+    xset dpms force off
+fi
+
+exit 0
+
+#xset dpms force off
