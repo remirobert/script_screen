@@ -9,6 +9,6 @@ script_screen
 - f --of                  put off the screen
 - h --help                display this help and exit
 
-Installation:
+**Installation:**
   
-  sudo mv screen /usr/bin/
+- sudo mv screen /usr/bin/
