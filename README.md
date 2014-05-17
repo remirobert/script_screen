@@ -1,9 +1,8 @@
 script_screen
 =============
 
-little script shell for switch on or off the screen on linux
+***little script shell for switch on or off the screen on linux***
 
-Usage :
 
 **Usage: screen [OPTION]...**
 - o --on                  put on the screen
